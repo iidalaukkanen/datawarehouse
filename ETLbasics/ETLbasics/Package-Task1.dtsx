@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-6SH2S79"
   DTS:CreatorName="DESKTOP-6SH2S79\Omistaja"
-  DTS:DTSID="{BE0790F6-4757-4C39-97F4-C6F3819B6FEC}"
+  DTS:DTSID="{B979CB09-84E2-482F-BA4B-580E89CBF530}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.1100.123"
   DTS:LocaleID="1035"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="Package-Task1"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{BA392A8D-72DF-4F83-B350-6E659AA76C98}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{9AFFDB1E-3879-433F-8C2E-66200E2135A5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -23,7 +23,7 @@
       DTS:ObjectName="Excel Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Omistaja\Documents\Dev\datawarehouse\Excel\ListOfPersons.xls;Extended Properties=&quot;Excel 8.0;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Omistaja\Documents\Dev\datawarehouse\Excel\ListOfPersons.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -534,13 +534,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="140,42.6666666666667"
-          Id="Package\Import Persons to Excel\Person table"
-          TopLeft="15.4166664369405,25.0877197704597" />
-        <NodeLayout
           Size="202.666666666667,42.6666666666667"
           Id="Package\Import Persons to Excel\List Of Persons Workbook"
           TopLeft="240.416663084179,32" />
+        <NodeLayout
+          Size="140,42.6666666666667"
+          Id="Package\Import Persons to Excel\Person table"
+          TopLeft="15.4166664369405,25.0877197704597" />
         <EdgeLayout
           Id="Package\Import Persons to Excel.Paths[OLE DB Source Output]"
           TopLeft="155.41666643694,49.8771932185632">
@@ -567,7 +567,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Import Persons to Excel\Person table">
+    design-time-name="Package\Import Persons to Excel\List Of Persons Workbook">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -580,7 +580,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Import Persons to Excel\List Of Persons Workbook">
+    design-time-name="Package\Import Persons to Excel\Person table">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
