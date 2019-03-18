@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PersonExample.Models;
 
 namespace PersonExample
 {
@@ -12,6 +13,7 @@ namespace PersonExample
         static void Main(string[] args)
         {
             //testing database read
+            CreatePerson();
             ReadByCity();
             for (int i = 0; i < 100; i++)
             {
@@ -25,7 +27,19 @@ namespace PersonExample
             person.FirstName = "James";
             person.LastName = "Bond";
             person.City = "London";
-            person.ShoeSize = 42;   
+            person.ShoeSize = 42;
+
+            _personRepository.Create(Person);
+        }
+
+        static void ReadByCity()
+        {
+
+        }
+
+        static void ReadById()
+        {
+
         }
 
     }
